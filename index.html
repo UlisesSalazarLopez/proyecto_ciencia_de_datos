@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencia de Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ADD8E6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ciencia de Datos</h1>
+
+    <!-- Sección 1 -->
+    <div class="section">
+        <h2>Sección 1: Webscraping</h2>
+        <h3>¿Qué es el Webscraping?</h3>
+        <p>El web scraping (o raspado web) es una técnica utilizada en la ciencia de datos para extraer información de sitios web de manera automatizada. Consiste en programar scripts o utilizar herramientas específicas que navegan por las páginas web, extraen los datos deseados y los estructuran en formatos utilizables para análisis posteriores, como bases de datos o archivos CSV.</p>
+        <p>En este ejemplo de Google Colab obtendremos las etiquetas h2 de una pagina web que cree anteriormente solo para observar que si funciona el código como debe y descargara un archivo de texto en la computadora.</p>
+        <h3>Link de Google Colab de la utilización de Webscraping:</h3>
+        <p><a href="https://colab.research.google.com/drive/1RaZ08O1AoodJCW428s64skahXHihQVDm?usp=sharing" target="_blank">https://colab.research.google.com/drive/1RaZ08O1AoodJCW428s64skahXHihQVDm?usp=sharing</a></p>
+    </div>
+
+    <!-- Sección 2 -->
+    <div class="section">
+        <h2>Sección 2: Técnicas de visualización </h2>
+        <p>La visualización de datos es una de las áreas más importantes en la ciencia de datos, ya que permite representar de manera gráfica la información para facilitar su comprensión y análisis. Algunas de las técnicas más comunes en visualización de datos:</p>
+        <h3>Tabla de Frecuencia</h3>
+        <p>Una tabla de frecuencia es una forma simple de mostrar la cantidad de veces que ocurre un valor en un conjunto de datos. Se usa para resumir y organizar datos categóricos o discretos, mostrando cómo se distribuyen las observaciones en diferentes categorías.</p>
+        <ul>
+            <li><strong>¿Cuándo se usa?:</strong>Cuando se desea obtener un resumen claro de la distribución de los datos, ya sea para variables categóricas (colores, tipos de productos) o discretas (números enteros).</li>
+            <li><strong>Aplicaciones:</strong>Facilidad para realizar operaciones como filtrado, agrupamiento y agregación.</li>
+        </ul>
+        <p><strong>Ejemplo de tabla de frecuencia:</strong></p>
+        <img src="tabla_frecuencias.JPG" alt="Tabla de frecuencias">
+        <h3>Gráfico de Pastel</h3>
+        <p>Un gráfico de pastel es un diagrama circular que se divide en sectores, donde cada sector representa una proporción o porcentaje de una categoría respecto al total.</p>
+        <ul>
+            <li><strong>¿Cuándo se usa?:</strong>Cuando se desea mostrar la relación de las partes con el todo, especialmente para datos categóricos.</li>
+            <li><strong>Aplicaciones:</strong>Participación de mercado, proporciones de ventas por producto, distribución de respuestas en encuestas.</li>
+        </ul>
+        <p><strong>Ejemplo de gráfico de pastel:</strong></p>
+        <img src="grafica_pastel.JPG" alt="Grafica de pastel">
+        <h3>Gráfico de Barras</h3>
+        <p>Un gráfico de barras se utiliza para comparar diferentes categorías. Las barras pueden ser verticales u horizontales, y su longitud o altura refleja la magnitud de los datos asociados a cada categoría.</p>
+        <ul>
+            <li><strong>¿Cuándo se usa?:</strong>Para comparar frecuencias o valores entre categorías discretas.</li>
+            <li><strong>Aplicaciones:</strong>Comparación de ventas entre diferentes productos, visualización de la cantidad de respuestas en una encuesta, análisis de la frecuencia de eventos.</li>
+        </ul>
+        <p><strong>Ejemplo de gráfico de barras:</strong></p>
+        <img src="grafica_barras.JPG" alt="Grafica de barras">
+        <h3>Caso de ejemplo del uso de las tecnicas de visualización</h3>
+        <p>En este ejemplo de Google Colab tenemos los datos de frutas más consumidas por temporada el cual obtendremos su tabla de frecuencia, grafica de pastel, grafica de barras.</p>
+        <h3>Link de Google Colab de la utilización de técnicas de visualización:</h3>
+        <p><a href="https://colab.research.google.com/drive/1e1LHNTnhtZ6g9h1YiY5urvkt9Vd_iHEU?usp=sharing" target="_blank">https://colab.research.google.com/drive/1e1LHNTnhtZ6g9h1YiY5urvkt9Vd_iHEU?usp=sharing</a></p>
+    </div>
+
+    <!-- Sección 3 -->
+    <div class="section">
+        <h2>Medidas de tendencia central</h2>
+        <p>Las medidas de tendencia central son estadísticas que describen el punto medio o el valor típico de un conjunto de datos. En ciencia de datos, estas medidas son esenciales para resumir y entender rápidamente la distribución de los datos. Las tres medidas más comunes son la media, la mediana y la moda.</p>
+        <h3>Media (Promedio)</h3>
+        <p>La media es el valor promedio de un conjunto de datos, calculado sumando todos los valores y dividiendo el resultado entre el número total de observaciones.</p>
+        <ul>
+            <li><strong>¿Cuándo se usa?:</strong>Es útil cuando los datos están distribuidos de manera uniforme, sin valores atípicos significativos.</li>
+            <li><strong>Aplicaciones:</strong>Ingresos promedio, calificaciones promedio, temperatura promedio.</li>
+        </ul>
+        <h3>Mediana</h3>
+        <p>La mediana es el valor que ocupa el lugar central en un conjunto de datos ordenado. Si el número de observaciones es impar, la mediana es el valor en el centro. Si el número de observaciones es par, la mediana es el promedio de los dos valores centrales.</p>
+        <ul>
+            <li><strong>¿Cuándo se usa?:</strong>Es útil cuando el conjunto de datos contiene valores atípicos (outliers) o está sesgado, ya que la mediana no se ve afectada por valores extremos.</li>
+            <li><strong>Aplicaciones:</strong>Ingresos familiares (cuando hay grandes diferencias entre el nivel de ingresos), precios de vivienda.</li>
+        </ul>
+        <h3>Moda</h3>
+        <p>La moda es el valor que aparece con mayor frecuencia en un conjunto de datos. A diferencia de la media y la mediana, un conjunto de datos puede tener más de una moda (si hay varios valores con la misma frecuencia) o ninguna moda (si todos los valores son únicos).</p>
+        <ul>
+            <li><strong>¿Cuándo se usa?:</strong>Es útil cuando se desea conocer el valor más común o frecuente en un conjunto de datos.</li>
+            <li><strong>Aplicaciones:</strong>Preferencias de consumidores, puntuaciones más comunes en un examen, tamaños de ropa más comprados.</li>
+        </ul>
+        <h3>Caso de ejemplo del uso de Media, Mediana, Moda</h3>
+        <p>En este ejemplo de Google Colab tenemos las edades de pacientes en una clínica el cual obtendremos los resultados de la Media, Mediana, Moda.</p>
+        <p><img src="edades.JPG" alt="Edades"></p>
+        <p><img src="resultados_edades.JPG" alt="Resultados media, mediana y moda"></p>
+        <h3>Link de Google Colab de la utilización de medidas de tendencia central:</h3>
+        <p><a href="https://colab.research.google.com/drive/1qpVtflQrFQf46226alg-kssPRWW9euXG?usp=sharing" target="_blank">https://colab.research.google.com/drive/1qpVtflQrFQf46226alg-kssPRWW9euXG?usp=sharing</a></p>
+    </div>
+
+    <!-- Sección 4 -->
+    <div class="section">
+        <h2>Medidas de dispersión</h2>
+        <p>Las medidas de dispersión en ciencia de datos son estadísticas que describen qué tan dispersos o esparcidos están los datos alrededor de una medida de tendencia central (como la media o la mediana). Estas medidas complementan las medidas de tendencia central proporcionando información sobre la variabilidad de los datos.</p>
+        <h3>Caso de ejemplo del uso de Medidas de dispersión</h3>
+        <p>En este ejemplo de Google Colab tenemos unos cuantos datos del peso de toronjas (en gramos) en el cual obtendremos las medidas de dispersión en este caso la tabla de frecuencia y el histograma.</p>
+        <p><img src="frecuencias_medidas.JPG" alt="Frecuencia del peso de las toronjas"></p>
+        <p><img src="histograma.JPG" alt="Histograma del peso de las toronjas"></p>
+        <h3>Link de Google Colab de la utilización de medidas de dispersión:</h3>
+        <p><a href="https://colab.research.google.com/drive/1kr2IcNpU_p-kcmgoX7nJDIEszEk6gO8C?usp=sharing" target="_blank">https://colab.research.google.com/drive/1kr2IcNpU_p-kcmgoX7nJDIEszEk6gO8C?usp=sharing</a></p>
+    </div>
+
+    <!-- Sección 5 -->
+    <div class="section">
+        <h2>Conclusiónes</h2>
+        <p>Como conclusión de este proyecto se vio todo lo que nos dio en el curso, los códigos son reciclados de otros trabajos, pero por las etiquetas se entiende que se debe cambiar para que el código funcione con otro tipos de datos, pero en si la ciencia de datos debe estar presente para nosotros como programadores ya que es algo muy útil para crear algoritmos en algunos programas. El Webscraping por ejemplo ayuda obtener datos de una pagina para el posible análisis de esos datos. Mientras que las técnicas de visualización nos ayudan a representar de manera grafica la información para mejor compresión y análisis al momento de analizar datos. Al igual que las medidas de tendencia nos dan un punto medio de los datos.</p>
+    </div>
+</body>
+</html>
